@@ -19,15 +19,17 @@ A release build is final, and the code cannot change in a given version number. 
 Update your `build.gradle` file with:
 
 ```gradle
+repositories {
+     maven {
+       url 'https://dl.bintray.com/rbrastad/XP'
+     }
+}
+
+
 dependencies {
     include 'no.rbrastad.xp:lib4tripletex:0.1.0'
 }
 
-repositories {
-    maven {
-        url 'https://dl.bintray.com/rbrastad/XP'
-    }
-}
 ```
 
 You can visit my Bintray repo for Enonic XP here: https://bintray.com/rbrastad/XP
