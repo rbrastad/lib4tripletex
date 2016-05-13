@@ -28,6 +28,9 @@ repositories {
         url 'https://dl.bintray.com/rbrastad/XP'
     }
 }
+
+You can visit my Bintray repo from Enonic XP here: https://bintray.com/rbrastad/XP
+
 ```
 
 ## Usage
