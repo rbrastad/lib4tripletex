@@ -20,7 +20,7 @@ Update your `build.gradle` file with:
 
 ```gradle
 dependencies {
-    include 'no.rbrastad.xp:lib4tripletex:0.0.1'
+    include 'no.rbrastad.xp:lib4tripletex:0.1.0'
 }
 
 repositories {
@@ -30,11 +30,9 @@ repositories {
 }
 ```
 
-
-
 ## Usage
 
-The API is developed in JAVA. But youc can use it in an Javascript controller.
+The API is developed in JAVA. But you can use it in an Javascript controller.
 
 ```
 var portalLib = require('/lib/xp/portal');
@@ -49,8 +47,6 @@ var userPassword = "<PASSWORD>"
 
 
 exports.login = function() {
-    var config = portalLib.getSiteConfig();
-
     return tripleTexBean.login(syncSystem,syncPassword, userName, userPassword);
 };
 
@@ -119,4 +115,4 @@ tripleTexUserPassword=<PASSWORD>
 tripleTexEmployeeId=<EMPLOYEEID TO TEST ON>
 ```
 
-This is done so you don't expose youre secret keys to anybody else.
+This is done so you don't expose the secret keys to anybody else.
